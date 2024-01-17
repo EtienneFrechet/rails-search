@@ -1,11 +1,77 @@
+.page-title {
+  text-align: center;
+  color: #252c6a;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  box-shadow: 1 4px 8px rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+}
+
+.main_container_text{
+  margin-right: 10px;
+}
+
+.course-list-container{
+justify-content: center;
+}
+
+#text {
+  margin-left: 80px;
+}
+
+//  cards
+.course_item {
+  position: relative;
+  margin-right: 10px;
+  width: 400px;
+  height: 300px;
+  margin-left: 15px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+.course_item a {
+  color: white;
+  text-decoration: none; /* Remove underline */
+  font-size: 35px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Adjusted text shadow values */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;;
+  z-index: 1;
+  background-size: 100%; /* Initial background-size */
+ }
+
+.course_item:hover {
+  transform: scale(1.1);
+}
+
+.course_item:hover a {
+  font-size: 40px; /* Change font size on hover */
+  text-shadow: 4px 2px 4px #fd1015;
+  color: #ffb71b; /* Change text color on hover */
+}
+
+
+/////////////////////////////////////////////////
+///
 /* Reset default margin and set up flex container */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background-color: #252c6a;
-  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  font-family:  'Montserrat', sans-serif;
 }
 
 body, html {
@@ -14,10 +80,15 @@ body, html {
 }
 
 /* Flex container for main content */
-.main-container {
+.main-container2 {
+  color: #252c6a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding-left: 22px;
+  font-size: 22px;
   flex: 1;
-  background-color: #252c6a;
-  /* Add other styles for your main content */
+  background-color: white;
+  margin-bottom: 25px;
 }
 
 .third {
@@ -26,8 +97,8 @@ body, html {
 }
 
 /* Styles for your banner */
-.bannermp {
-  background-color: #202659;
+.banner {
+  background-color: #252c6a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,8 +127,8 @@ color: white;
   color: #ffb71b;
 }
 /* Search bar styles */
-.search__containermp {
-  background-color: #202659;
+.search__container {
+  background-color: #252c6a;
   padding: 20px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;;
@@ -82,7 +153,6 @@ color: white;
   backface-visibility: hidden;
   transform-style: preserve-3d;
 
-
   &::placeholder {
     color: #ffb71b;
     text-transform: capitalize;
@@ -96,7 +166,7 @@ color: white;
     border: 1px solid transparent;
     border-bottom: 1px solid #ffb71b;
     border-radius: 0;
-    background-color: #202659;
+    background-color: #252c6a;
     background-position: 100% center;
   }
 }
@@ -117,7 +187,7 @@ color: white;
 
 /* Footer styles */
 footer {
-  background-color: #202659;
+  background-color: #252c6a;
   color: white;
   padding: 20px;
   width: 100%;
@@ -147,43 +217,29 @@ footer {
   margin-left: -1px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // dropdown
 
-.menump {
+.menu {
   display: flex;
-  background-color: #202659;
+  background-color: #252c6a;
 }
 
-.dropdownmp {
+.dropdown {
   display: inline-block;
 }
 
-.dropdownmp .btn-primary {
-  background-color: #202659;
+.dropdown .btn-primary {
+  background-color: #252c6a;
   border: none; /* Remove the border */
   color: #fff; /* Set the initial font color */
 }
 
-.dropdownmp:hover .btn-primary {
+.dropdown:hover .btn-primary {
   color: #ffb71b; /* Change font color on hover */
   position: relative;
 }
 
-.dropdownmp .btn-primary::before {
+.dropdown .btn-primary::before {
   content: "";
   width: 0; /* Initial width set to 0 */
   height: 5px;
@@ -196,25 +252,25 @@ footer {
   transition: width 0.3s ease, opacity 0.3s ease; /* Add transitions for width and opacity */
 }
 
-.dropdownmp:hover .btn-primary::before {
+.dropdown:hover .btn-primary::before {
   width: 30px;
   opacity: 1;
 }
-.dropdownmp .dropdown-menu {
+.dropdown .dropdown-menu {
   display: none;
 }
 
-.dropdownmp:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
   background-color: #252c6a;
 }
 
-.dropdownmp .dropdown-menu .dropdown-item {
+.dropdown .dropdown-menu .dropdown-item {
   margin-bottom: 10px;
   border-bottom: 1px solid #00adef; /* Add border to each dropdown item */
 }
 
-.dropdownmp .dropdown-menu .dropdown-item::before {
+.dropdown .dropdown-menu .dropdown-item::before {
   content: "";
   width: 0; /* Initial width set to 0 */
   height: 5px;
@@ -227,23 +283,23 @@ footer {
   transition: width 0.5s ease, opacity 0.5s ease; /* Add transitions for width and opacity */
 }
 
-.dropdownmp .dropdown-menu .dropdown-item:hover::before {
+.dropdown .dropdown-menu .dropdown-item:hover::before {
   width: 30px;
   opacity: 1;
 }
 
 
-.dropdownmp .dropdown-menu .dropdown-item:hover::before {
+.dropdown .dropdown-menu .dropdown-item:hover::before {
   opacity: 1; /* Make it visible on hover */
 }
 
-.dropdownmp .dropdown-menu a {
+.dropdown .dropdown-menu a {
   color: #fff; /* Set the initial font color for dropdown items */
   transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions */
   position: relative;
 }
 
-.dropdownmp .dropdown-menu a:hover {
+.dropdown .dropdown-menu a:hover {
   background-color: #252c6a;
   color: #00adef;
 }

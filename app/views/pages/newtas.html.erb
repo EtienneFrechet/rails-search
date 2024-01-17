@@ -1,6 +1,6 @@
 <body>
 <%# BANNER %>
-<div class="container-fluid bannermp d-flex justify-content-between align-items-center">
+<div class="container-fluid banner d-flex justify-content-between align-items-center">
   <!-- Logo -->
   <div class="logo">
     <div class="col-12 tas-logo">
@@ -44,8 +44,8 @@
 </div>
 
 <%# SEARCH BAR %>
-<div class="search__containermp">
-    <input class="search__input" type="text" placeholder="Find books, articles, videos,and more...">
+<div class="search__container">
+    <input class="search__input" type="text" placeholder="Find books, articles, videos and more...">
 
     <button class= "search-help">
       search guide
@@ -55,8 +55,8 @@
 <%# end of BANNER %>
 
 <%# DROPDOWN MENU %>
-<div class="menump">
-  <div class="dropdownmp">
+<div class="menu">
+  <div class="dropdown">
       <button
       class="btn btn-primary dropdown-toggle"
       type="button"
@@ -74,7 +74,7 @@
     </ul>
   </div>
 
-    <div class="dropdownmp">
+    <div class="dropdown">
       <button
       class="btn btn-primary dropdown-toggle"
       type="button"
@@ -91,7 +91,7 @@
     </ul>
   </div>
 
-    <div class="dropdownmp">
+    <div class="dropdown">
       <button
       class="btn btn-primary dropdown-toggle"
       type="button"
@@ -109,7 +109,7 @@
     </ul>
   </div>
 
-      <div class="dropdownmp">
+      <div class="dropdown">
       <button
       class="btn btn-primary dropdown-toggle"
       type="button"
@@ -128,7 +128,7 @@
     </ul>
   </div>
 
-      <div class="dropdownmp">
+      <div class="dropdown">
       <button
       class="btn btn-primary dropdown-toggle"
       type="button"
@@ -149,23 +149,94 @@
 
 
 <%# Main WRAPPER %>
-<div class="main-container">
-
-  <div class= "cards-container1">
-      <%= image_tag('top div maquette.png', alt: 'Instagram feed') %>
+<div class="main-container2">
+<div class="container-fluid mt-5 mb-5">
+    <h1 class="page-title">Course and Subject Guides</h1>
   </div>
 
-  <div class= "cards-container2">
-    <%= image_tag('mid div maquette.png', alt: 'Instagram feed') %>
-  </div>
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+      <div class="field-items">
+        <div class="field-item even" property="content:encoded">
+          <div>
+            <div id="text">
+            <p >Click on course/subject specific guides below for links from your teachers and USIC. Go to&nbsp;<a href="https://usic.tas.edu.tw/e-resource-guide" target="_blank">Research Guides</a>&nbsp;to start research papers.</p>
+            <p><strong>Researching Taiwan? See&nbsp;<a href="https://usic.tas.edu.tw/node/2275" target="_blank">Taiwan Resources</a> page.</strong></p>
+            </div>
+            <div class="course-list-container row">
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxlbQIfMguWujgOYm59OuO1EFJHFUnEZoxPxPI8lYGp9bsMoJbGqAADQrBOVRWQx5fSo&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">Computer Science</div>
+                </a>
+              </div>
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://png.pngtree.com/background/20230613/original/pngtree-all-souls-college-a-part-of-oxford-university-in-picture-image_3399134.jpg?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/node/2264" target="_blank">
+                  <div class="button-content">English</div>
+                </a>
+              </div>
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://cdn.thecollector.com/wp-content/uploads/2023/08/when-was-the-early-high-late-renaissance-art-period.jpg?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/node/2263" target="_blank">
+                  <div class="button-content">Fine Arts</div>
+                </a>
+              </div>
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://esbchs.blackgold.ca/wp-content/uploads/sites/30/2021/03/worldhistory.png?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/upper-school-library-course-guides" target="_blank">
+                  <div class="button-content">History</div>
+                </a>
+              </div>
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ34qOk48EyPUhfKU5Q59W0lF67HyP80it-Bg&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">Math</div>
+                </a>
+              </div>
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhuTGyDbKqzSBs1u7Q4oSQYayvkdIhvslAA&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">Performing arts</div>
+                </a>
+              </div>
 
-  <div class= "cards-container3">
-    <%= image_tag('bottom.png', alt: 'Instagram feed') %>
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMSq0Pkndu1ta2GwNwviv8nKZ4dF6uPbtKlw&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">Science</div>
+                </a>
+              </div>
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwUfqjtbsLQ7_L3AS2tneQxo24QCPzMuk69Q&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">Social Science</div>
+                </a>
+              </div>
+
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-PZc0CFSwfcWG7iDA4TwdHo1b8wyOapxXpw&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">Taiwan</div>
+                </a>
+              </div>
+
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvOWM3dGRrGGDz01y3zWmLPw1edW5AwOQ93A&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">TOK</div>
+                </a>
+              </div>
+
+              <div class="col-3 mt-3 d-flex justify-content-center course_item clickable-div" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFJ-uRNk8N8jxvlB3rgVxpIOOnTf3odDCSA&usqp=CAU?width=1400&quality=70'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <a href="https://usic.tas.edu.tw/computer-science" target="_blank">
+                  <div class="button-content">World Language</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
 <%# Eend of WRAPPER %>
 
+<%# test %>
+ <%# <div class="container-fluid mt-5 mb-5">
+
+https://cdn.thecollector.com/wp-content/uploads/2023/08/when-was-the-early-high-late-renaissance-art-period.jpg?width=1400&quality=70
+<%# end of test %>
 
 <%# FOOTER ( c/c from tas) %>
 <footer>
